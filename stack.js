@@ -1,4 +1,4 @@
-// This Stack is written in the pseudoclassical pattern
+// This Stack is written using the pseudoclassical pattern
 
 // Creates the stack
 var Stack =function () {
