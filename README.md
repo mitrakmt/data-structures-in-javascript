@@ -11,13 +11,14 @@ Each article will go into depth with high level information, analysis, time comp
 
 ## Data structures covered:
 - [ ] Array
-- [ ] Hash Table
-- [ ] Set
-- [ ] Singly Linked List
+- [x] Hash Table
+- [ ] Spatial Hashing Table
+- [x] Set
+- [x] Singly Linked List
 - [ ] Doubly Linked List
 - [x] Stack
 - [x] Queue
-- [ ] Tree
-- [ ] Binary Search Tree
+- [x] Tree
+- [x] Binary Search Tree
 - [ ] Trie
-- [ ] Graph
+- [x] Graph

@@ -1,36 +1,42 @@
 // This Tree is written using the pseudoclassical pattern
 
+// Create a tree
 var Tree = function(value) {
- var newTree = {};
- newTree.value = value;
+    var newTree = {};
+    newTree.value = value;
 
- newTree.children = [];
- _.extend(newTree, treeMethods);
+    newTree.children = [];
+    // Extend the functionality of the Tree class to include treeMethods
+    _.extend(newTree, treeMethods);
 
- return newTree;
+    return newTree;
 };
 
 var treeMethods = {};
 
+// Add a child onto the tree
 treeMethods.addChild = function(value) {
- this.children.push(Tree(value));
+    this.children.push(Tree(value));
 };
 
+// Check to see if the tree contains a specific value
 treeMethods.contains = function(target) {
- var result = false;
+    var result = false;
 
- function recurse(childrenArray) {
-   childrenArray.forEach(function (child) {
+    // Using recursion to search the tree
+    function recurse(childrenArray) {
+        childrenArray.forEach(function(child) {
 
-     if (child.value === target) {
-       result = true;
-     } else if (child.children.length > 0) {
-       recurse (child.children);
-     }
-   })
- }
+            if (child.value === target) {
+                result = true;
+            } else if (child.children.length > 0) {
+                recurse(child.children);
+            }
+        })
+    }
 
- recurse(this.children);
+    // Call the recurse function to begin searching tree
+    recurse(this.children);
 
- return result;
+    return result;
 };
