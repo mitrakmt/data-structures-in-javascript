@@ -1,4 +1,5 @@
 // This BST is written using the pseudoclassical pattern
+// https://medium.com/@mike_mitrakos/implement-a-binary-search-tree-in-javascript-952a44ee7c26#.ny3psv9fd
 
 var BinarySearchTree = function(value) {
     var instance = Object.create(BinarySearchTree.prototype);

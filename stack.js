@@ -1,4 +1,5 @@
 // This Stack is written using the pseudoclassical pattern
+// https://medium.com/@mike_mitrakos/data-structure-stack-in-javascript-714f45dbf889
 
 // Creates the stack
 var Stack = function() {

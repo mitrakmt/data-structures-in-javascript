@@ -1,4 +1,5 @@
 // This Stack is written using the pseudoclassical pattern
+// https://medium.com/@mike_mitrakos/implement-a-queue-in-javascript-de306a8821c#.fmxq3w2rb
 
 // Creates the queue
 var Queue = function() {
